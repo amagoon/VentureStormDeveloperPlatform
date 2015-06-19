@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>VentureStorm</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <!-- FontAwesome 4.3.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons 2.0.0 -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
+    <!-- Theme style -->
+    <link href="dist/css/VS.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck -->
+    <link href="plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="skin-blue">
+    <div class="wrapper">
+      
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo"><b>Venture</b>Storm</a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+                                <a href="index2.html" class="logo pull-right"><b>Developer</b>Dashboard</a>
+
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+
+          <div class="navbar-custom-menu">
+
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">3</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 3 messages</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li><!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                          </div>
+                          <h4>
+                            Entrepreneur Joe
+                            <small><i class="fa fa-clock-o"></i> 1 hours</small>
+                          </h4>
+                          <p>Are you finished with the front end work yet?</p>
+                        </a>
+                      </li><!-- end message -->
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                              Entrepreneur Tim
+                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                          </h4>
+                          <p>Want to meet at the library to work on the app?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                            VentureStorm
+                            <small><i class="fa fa-clock-o"></i> Today</small>
+                          </h4>
+                          <p>$1190 have been deposited to your WePay account.</p>
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+              </li>
+              <!-- Notifications: style can be found in dropdown.less -->
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">5</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 5 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 55 new members joined this week
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-green"></i>Paid $1190
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i>Sign NDA
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i>6 Invitations Accepted
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i>You have 2 new messages
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="dist/img/VentureStorm_EphraimRothschild.jpg" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs">Ephraim Rothschild</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="dist/img/VentureStorm_EphraimRothschild.jpg" class="img-circle" alt="User Image" />
+                    <p>
+                      Ephraim Rothschild - Developer
+                      <small>Member since March. 2015</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Past Projects</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">WePay</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/VentureStorm_EphraimRothschild.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>Ephraim Rothschild</p>
+
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search..."/>
+              <span class="input-group-btn">
+                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">NAVIGATION</li>
+            <li>
+              <a href="DeveloperDashboard.html">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailbox.html">
+                <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                <small class="label pull-right bg-yellow">12</small>
+              </a>
+            </li>
+              <li class="active treeview">
+              <a href="projects.html">
+                <i class="fa fa-envelope"></i> <span>Projects</span>
+                <small class="label pull-right bg-blue">116</small>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Dashboard
+            <small>Control panel</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          
+          <!-- Main row -->
+          <div class="row">
+              <div class="col-md-8">
+                                    <div class="box">
+
+                    <div class="ibox float-e-margins" style="padding:20px">
+                        <!--<div class="ibox-title">
+                            <h5>Project Title</h5>
+                        </div> -->
+                        <div>
+                            <div class="ibox-content no-padding border-left-right">
+                                <img alt="image" class="img-responsive" src="dist/img/Tabster.png">
+                            </div>
+                            <div class="ibox-content profile-content">
+                                <h4><strong>Tabster</strong></h4>
+                                <p><i class="fa fa-users"></i> Nick Bentley</p>
+                                <h5>
+                                    About the Project
+                                </h5>
+                                <p>
+                                   Tabster enables sit down restaurants to accept preorders for food. The customer chooses the restaurant, selects their food within the app when they arrive, and waits to be seated. By the time the customer sits down, they will have their first course and drinks in minutes. This increases table turnover for the restaurant and leaves the customer with a good dining experience. As an added bonus, customers will be prompted by notification upon leaving the restaurant to rate the menu items they ordered and their experience at the restaurant.
+
+
+                                </p>
+            
+                                
+                            </div>
+                    </div>
+                </div>
+                                </div>
+              </div>
+              <div class="col-md-4">
+              <!-- USERS LIST -->
+              <div class="box box-danger">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Tabster team</h3>
+                  <div class="box-tools pull-right">
+                    <span class="label label-danger">8 Members</span>
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding" style="display: block;">
+                  <ul class="users-list clearfix">
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Tom</a>
+                      <span class="users-list-date">Today</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Tim</a>
+                      <span class="users-list-date">Yesterday</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Timmy</a>
+                      <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Thomas</a>
+                      <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">John Tom</a>
+                      <span class="users-list-date">13 Jan</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Tommy</a>
+                      <span class="users-list-date">14 Jan</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">johnson</a>
+                      <span class="users-list-date">15 Jan</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">Nadia</a>
+                      <span class="users-list-date">15 Jan</span>
+                    </li>
+                  </ul><!-- /.users-list -->
+                </div><!-- /.box-body -->
+                <div class="box-footer text-center" style="display: block;">
+<div class="btn-group">
+                      <button type="button" class="btn btn-success">Apply</button>
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Cancel Application</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div><!-- /.box-footer -->
+              </div><!--/.box -->
+            </div>
+              
+           
+              
+              
+           
+          </div><!-- /.row (main row) -->
+   <div class="row">
+       <div class="col-md-6">
+              <div class="box box-solid">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Project Milestones</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                      <div class="box-header with-border">
+                        <h4 class="box-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
+Milestone #1 - Design Mockups for Android UI                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" aria-expanded="true" style="height: 0px;">
+                        <div class="box-body">
+                          Milestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UIMilestone #1 - Design Mockups for Android UI
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel box box-danger">
+                      <div class="box-header with-border">
+                        <h4 class="box-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="" aria-expanded="false">
+Milestone #2 - Build RestAPI for Rails structure                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse in" aria-expanded="true">
+                        <div class="box-body">
+                          Milestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structureMilestone #2 - Build RestAPI for Rails structure
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel box box-success">
+                      <div class="box-header with-border">
+                        <h4 class="box-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">
+Milestone #3 - Android Backend and UI
+
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="box-body">
+                         Milestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UIMilestone #3 - Android Backend and UI
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div>
+              <div class="col-md-3">
+              <div class="box box-solid">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Project Milestone Progress</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <p><code>Design Mockups for Android UI</code></p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                      <span class="sr-only">40% Complete (success)</span>
+                    </div>
+                  </div>
+                  <p><code>Build RestAPI for Rails structure</code></p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                      <span class="sr-only">20% Complete</span>
+                    </div>
+                  </div>
+                  <p>Android Backend</p>
+                  <div class="progress ">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                      <span class="sr-only">60% Complete (warning)</span>
+                    </div>
+                  </div>
+
+              </div><!-- /.box -->
+            </div>
+            </div>
+       
+       <div class="col-md-3">
+              <!-- DIRECT CHAT PRIMARY -->
+              <div class="box box-primary direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Direct Chat</h3>
+                  <div class="box-tools pull-right">
+                    <span data-toggle="tooltip" title="" class="badge bg-light-blue" data-original-title="3 New Messages">3</span>
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts"><i class="fa fa-comments"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body" style="display: block;">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">Taylor</span>
+                        <span class="direct-chat-timestamp pull-right">24 Jan 12:12 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="dist/img/VentureStorm_TaylorJohnson.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        Hey... thanks for accepting me into the project
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-right">Ephraim</span>
+                        <span class="direct-chat-timestamp pull-left">11 Jan 3:10 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="dist/img/VentureStorm_EphraimRothschild.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        np, thanks for joining.
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->                    
+                  </div><!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="dist/img/VentureStorm_EphraimRothschild.jpg">
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date pull-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div><!-- /.contacts-list-info -->
+                        </a>
+                      </li><!-- End Contact Item -->                      
+                    </ul><!-- /.contatcts-list -->
+                  </div><!-- /.direct-chat-pane -->
+                </div><!-- /.box-body -->
+                <div class="box-footer" style="display: block;">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-primary btn-flat">Send</button>
+                      </span>
+                    </div>
+                  </form>
+                </div><!-- /.box-footer-->
+              </div><!--/.direct-chat -->
+            </div>
+       
+              
+              
+              </div>
+            <h2 class="page-header">VentureStorm Toolbox</h2>
+            <div class="row">
+                
+                <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <!-- Custom Tabs -->
+              <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_1" data-toggle="tab"><i class="fa fa-google-plus"></i> Google Plus/Hangouts</a></li>
+                  <li><a href="#tab_2" data-toggle="tab"><i class="fa fa-github"></i> Tabster <i class="fa fa-git"></i>
+ Repo</a></li>
+                  <li><a href="#tab_3" data-toggle="tab"><i class="fa fa-dropbox"></i> Dropbox Files</a></li>
+                  <li><a href="#tab_4" data-toggle="tab"><i class="fa fa-credit-card"></i> WePay</a></li>
+                  <li><a href="#tab_5" data-toggle="tab"><i class="fa fa-slack"></i>
+ Slack</a></li>
+
+
+                  
+                  <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    <b>Leverage Google Plus/Hangouts tools</b>
+                      <p></p>
+                      <p><a class="btn btn-block btn-social btn-google-plus">
+                    <i class="fa fa-google-plus"></i> Sign in with Google
+                  </a></p>
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    <p>Keep you code under control with Github</p>
+                      <p></p>
+                      <p><a class="btn btn-block btn-social btn-github">
+                    <i class="fa fa-github"></i> Sign in with GitHub
+                  </a></p>
+                      <p></p>
+                      <p>GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.</p>
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                      <p>Use Dropbox for easy file-sharing</p>
+                      <p></p>
+                    <p><a class="btn btn-block btn-social btn-dropbox">
+                    <i class="fa fa-dropbox"></i> Sign in with Dropbox
+                  </a></p>
+                      <p>Dropbox is a file hosting service operated by Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software. Dropbox allows users to create a special folder on their computers, which Dropbox then synchronizes so that it appears to be the same folder (with the same contents) regardless of which computer is used to view it. Files placed in this folder are also accessible via the Dropbox website and mobile apps. Dropbox uses a freemium business model, where users are offered a free account with a set storage size and paid subscriptions for accounts with more capacity.[6]</p>
+                  </div><!-- /.tab-pane -->
+                    <div class="tab-pane" id="tab_4">
+                   <p>WePay is an online payment service provider in the United States. WePay's payment API focuses exclusively on platform businesses such as crowdfunding sites, marketplaces and small business software. Through this API, WePay allows these platforms to access its payments capabilities and process credit cards for the platform's users.</p>
+                  </div><!-- /.tab-pane -->
+                    <div class="tab-pane" id="tab_5">
+                    <p>Slack is a team collaboration tool co-founded by Stewart Butterfield, Eric Costello, Cal Henderson, and Serguei Mourachov. Slack began as an internal tool used by their company Tiny Speck in the development of Glitch, a now defunct online game.Slack was launched in August, 2013, and signed up 8000 customers within 24 hours of launch.</p>
+                  </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+              </div><!-- nav-tabs-custom -->
+            </div>
+            
+            
+            </div>
+        
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Developer</b>Dashboard
+        </div>
+        <strong>Copyright &copy; 2015 <a href="http://VentureStorm.com">VentureStorm LLC</a>.</strong> All rights reserved.
+      </footer>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.3 -->
+    <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <!-- jQuery UI 1.11.2 -->
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>    
+    <!-- Morris.js charts -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="plugins/morris/morris.min.js" type="text/javascript"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <!-- jvectormap -->
+    <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/knob/jquery.knob.js" type="text/javascript"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <!-- datepicker -->
+    <script src="plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <!-- Slimscroll -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='plugins/fastclick/fastclick.min.js'></script>
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+
+    <script src="dist/js/pages/dashboard.js" type="text/javascript"></script>
+
+  </body>
+</html>
